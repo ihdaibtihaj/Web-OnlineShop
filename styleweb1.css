@@ -1,0 +1,355 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Style*/
+
+body { 
+	font: 16px/28px arial, sans-serif;
+	background-image:url(aset/interlaced.png);
+	
+}
+
+header {	
+	position: fixed;
+	top: 0;
+	left:0;
+	right: 0;
+	height: 50px;
+	background-color: white;
+	border-bottom: 3px solid navy;
+	z-index: 9999;
+
+}
+.header h1{
+	font-size: 20px;
+	color: #001a66;
+	font-family: Cooper Std Black, arial, sans-serif;
+	font-weight: bold;
+}
+
+.header img {
+	height: 45px;
+	float: left;
+}
+
+.topbar {
+	position: fixed;
+	top: 50px;
+	margin-bottom: 50px;
+	left:0;
+	right: 0;
+	height: 50px;
+	background-color:#e6f3ff;
+	border-bottom: 3px solid navy;
+	z-index: 9999;
+}
+
+.topbar h2 {
+	font-weight: bold;
+	position: absolute;
+	top: 8px;
+	left: 50px;
+}
+.topbar {
+	padding:0px;
+	display: flex;
+}
+
+.topbar ul li {
+	display: inline-block;
+	margin: 0px auto;	
+	padding-top:0px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.topbar a {
+	margin-left: 10px;
+	text-decoration: none;
+	color: #002266;
+	padding: 2px;
+	font-weight: bold;
+
+}
+
+.topbar a:hover {
+	background-color: skyblue;
+	color:white;
+}
+
+.home {
+	width: 100%; height: 600px;
+	margin:auto;
+	background-image: url(aset/homepic.png);
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: cover;
+	position: relative;
+	top: 100px;
+	display: flex;
+}
+
+
+li a, .linkbtn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li.pesanandropdown {
+    display: inline-block;
+}
+
+.linkdropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.linkdropdown a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.tampilkan {display:block;}
+
+.container {
+	width: 960px;
+	margin: 50px auto;
+	background-color: white;
+	position: relative;
+	top: 80px;
+}
+
+
+.hero {
+	height: 350px;
+	background-image: url(aset/hero.png);
+	background-size: cover;
+	border-top:5px solid navy;
+	border-bottom: 5px solid #84a1e1;
+
+}
+
+.tentang {
+	width: 700px;
+	padding: 15px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.tentang h2 {
+	font-size: 35px;
+	font-weight:bold;
+	color:#2952a3;
+}
+.tentang .penulis {
+	font-size:15px;
+}
+
+.tentang .penulis a {
+	color: #007acc;
+	text-decoration: none;
+
+}
+
+.tentang .penulis a:hover {
+	background-color:lightgrey;
+	color: navy;
+
+}
+.tentang p {
+	margin-bottom: 20px;
+	font-size: 15px;
+	font-family: Bahnschrift SemiBold, sans-serif;
+	text-align: justify;
+}
+
+.katalog {
+	width: 700px;
+	padding: 15px;
+	box-sizing: border-box;
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+.katalog h2 {
+	font-size: 30px;
+	font-weight:bold;
+	color:#2952a3;
+}
+
+.produk1 {
+	width: 400px;
+}
+
+.pemesanan {	
+	width: 700px;
+	padding: 15px;
+	box-sizing: border-box;
+	float: left;
+	font-family: Bahnschrift SemiBold, sans-serif;
+}
+.pemesanan h2 {
+	font-size: 35px;
+	font-weight:bold;
+	color:#2952a3;
+}
+.pemesanan h4 {
+	font-size: 15px;
+	font-weight:bold;	
+}
+.hub {	
+	width: 700px;
+	padding: 15px;
+	box-sizing: border-box;
+	float: left;
+
+}
+
+.hub h2 {
+	font-size: 35px;
+	font-weight:bold;
+	color:#2952a3;
+}
+.hub h4 {
+	font-size: 20px;
+	font-weight:bold;
+}
+.sidebar {
+	width: 300px
+	float: right;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sidebar h3 {
+	color: grey;
+	font-weight: bold;
+
+}
+
+.sidebar img {
+	width: 100px;
+	float: left;
+	padding-right: 10px;
+}
+
+.sidebar p {
+	font-family: Bahnschrift SemiBold, arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: black;
+	text-align: justify;
+}
+
+.penutup {
+	width: 100%; height: 210px;
+	margin:auto;
+	margin-top: 50px;
+	padding: 5px;
+	color: white;
+	background-color:#00264d;
+	position: relative;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.kontak {
+	font-size: 20px;
+	font-weight: bold;
+}
+.sosmed{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+footer {
+	background-color:#003366;
+	padding-bottom: 5px;
+}
+
+.copy {
+	font-size: 12px;
+	color: white;
+	text-align: center;
+}
+
+
+
+/** cleer
+
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
